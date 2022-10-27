@@ -88,3 +88,57 @@ Traceback (most recent call last):
     logger.info(countryData)
 AttributeError: 'dict' object has no attribute 'data'
 ERROR 2022-10-27 14:07:50,343 basehttp 7260 15828 "GET / HTTP/1.1" 500 66822
+ERROR 2022-10-27 14:13:38,627 log 9988 11128 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 19, in home
+    print(countryData.infoList)
+AttributeError: 'dict' object has no attribute 'infoList'
+ERROR 2022-10-27 14:13:38,631 basehttp 9988 11128 "GET / HTTP/1.1" 500 66482
+ERROR 2022-10-27 14:22:12,743 log 9204 6128 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 20, in home
+    print(sorted(l, key=lambda countryData: countryData['ID']))
+NameError: name 'l' is not defined
+ERROR 2022-10-27 14:22:12,746 basehttp 9204 6128 "GET / HTTP/1.1" 500 66451
+ERROR 2022-10-27 14:22:32,226 log 11260 10760 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 20, in home
+    pprint.pprint(sorted(countryData, key=lambda x: x['Age']))
+NameError: name 'pprint' is not defined
+ERROR 2022-10-27 14:22:32,230 basehttp 11260 10760 "GET / HTTP/1.1" 500 66469
+ERROR 2022-10-27 14:22:41,425 log 13752 14060 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 20, in home
+    print(sorted(countryData, key=lambda x: x['Age']))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 20, in <lambda>
+    print(sorted(countryData, key=lambda x: x['Age']))
+TypeError: string indices must be integers
+ERROR 2022-10-27 14:22:41,429 basehttp 13752 14060 "GET / HTTP/1.1" 500 69841
+ERROR 2022-10-27 14:22:55,825 log 5228 8168 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 20, in home
+    print(sorted(countryData, key=lambda x: x['ID']))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 20, in <lambda>
+    print(sorted(countryData, key=lambda x: x['ID']))
+TypeError: string indices must be integers
+ERROR 2022-10-27 14:22:55,830 basehttp 5228 8168 "GET / HTTP/1.1" 500 69837

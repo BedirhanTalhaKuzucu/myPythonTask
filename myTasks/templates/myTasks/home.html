@@ -35,6 +35,43 @@
         {% endfor %}
     </table>
 
+
+    <br> <br> <br>
+    <hr>
+    <h2>Task3</h2>
+
+    <h4>Sorted byID </h4>
+    <table style="width:50%">
+        <tr>
+            <th> ID </th>
+            <th>Country Name </th>
+            <th>Iso Code</th>
+        </tr>
+        {% for item in sortedId %}
+        <tr>
+            <td> {{ item.ID }} </td>
+            <td> {{ item.name }} </td>
+            <td>{{ item.ISOCode }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h4>Sorted by ISO </h4>
+    <table style="width:50%">
+        <tr>
+            <th> ID </th>
+            <th>Country Name </th>
+            <th>Iso Code</th>
+        </tr>
+        {% for item in sortedISO %}
+        <tr>
+            <td> {{ item.ID }} </td>
+            <td> {{ item.name }} </td>
+            <td>{{ item.ISOCode }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
 </body>
 
 </html>

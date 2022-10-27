@@ -15,11 +15,14 @@ countryData = {
 }
 
 def home(request):
-    # json_data = open('data.json')
-    # data = json.load(json_data)
+    logger.info(countryData) 
+    sortedId = sorted(countryData['infoList'], key=lambda x: x['ID'])
+    sortedISO = sorted(countryData['infoList'], key=lambda x: x['ISOCode'])
+    
     
     context = {
-        'data': countryData
+        'data': countryData,
+        "sortedId" :sortedId,
+        "sortedISO" : sortedISO, 
     }
-    logger.info(countryData) 
     return render(request, "myTasks/home.html", context)
