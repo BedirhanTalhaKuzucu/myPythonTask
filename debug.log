@@ -142,3 +142,220 @@ Traceback (most recent call last):
     print(sorted(countryData, key=lambda x: x['ID']))
 TypeError: string indices must be integers
 ERROR 2022-10-27 14:22:55,830 basehttp 5228 8168 "GET / HTTP/1.1" 500 69837
+ERROR 2022-10-27 14:54:40,315 log 11668 944 Internal Server Error: /sort
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 37, in sortedId
+    return render(request, "myTasks/sortedId.html", context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2022-10-27 14:54:40,328 basehttp 11668 944 "GET /sort HTTP/1.1" 500 136127
+ERROR 2022-10-27 14:55:31,905 log 11668 944 Internal Server Error: /sort
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: home.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 37, in sortedId
+    return render(request, "myTasks/sortedId.html", context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: home.html
+ERROR 2022-10-27 14:55:31,922 basehttp 11668 944 "GET /sort HTTP/1.1" 500 136264
+ERROR 2022-10-27 14:55:34,144 log 11668 944 Internal Server Error: /sort
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: home.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 37, in sortedId
+    return render(request, "myTasks/sortedId.html", context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: home.html
+ERROR 2022-10-27 14:55:34,153 basehttp 11668 944 "GET /sort HTTP/1.1" 500 136264
+ERROR 2022-10-27 14:55:42,073 log 11668 944 Internal Server Error: /sort
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: home.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 37, in sortedId
+    return render(request, "myTasks/sortedId.html", context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: home.html
+ERROR 2022-10-27 14:55:42,080 basehttp 11668 944 "GET /sort HTTP/1.1" 500 136264
+ERROR 2022-10-27 15:12:21,933 log 3408 13116 Internal Server Error: /sort
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: home.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 37, in sortedId
+    return render(request, "myTasks/sortedId.html", context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 64, in render
+    reraise(exc, self.backend)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\backends\django.py", line 85, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: home.html
+ERROR 2022-10-27 15:12:21,946 basehttp 3408 13116 "GET /sort HTTP/1.1" 500 136149
+WARNING 2022-10-27 15:17:37,704 log 12456 6948 Not Found: /sort
+WARNING 2022-10-27 15:17:37,714 basehttp 12456 6948 "GET /sort HTTP/1.1" 404 2590

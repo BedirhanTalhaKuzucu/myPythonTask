@@ -26,3 +26,19 @@ def home(request):
         "sortedISO" : sortedISO, 
     }
     return render(request, "myTasks/home.html", context)
+
+def sortedId(request):
+    sortedId = sorted(countryData['infoList'], key=lambda x: x['ID'])
+    
+    context = {
+        "sortedId" :sortedId,
+    }
+    return render(request, "myTasks/sortedId.html", context)
+
+def sortedISO(request):
+    sortedISO = sorted(countryData['infoList'], key=lambda x: x['ISOCode'])
+    
+    context = {
+        "sortedISO" :sortedISO,
+    }
+    return render(request, "myTasks/sortedISO.html", context)
