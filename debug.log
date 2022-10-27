@@ -1,0 +1,90 @@
+ERROR 2022-10-27 13:59:00,489 log 13492 10136 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 8, in home
+    json_data = open('/static/prices.json')
+FileNotFoundError: [Errno 2] No such file or directory: '/static/prices.json'
+ERROR 2022-10-27 13:59:00,492 basehttp 13492 10136 "GET / HTTP/1.1" 500 66541
+ERROR 2022-10-27 13:59:22,722 log 8908 14004 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 8, in home
+    json_data = open('/data.json')
+FileNotFoundError: [Errno 2] No such file or directory: '/data.json'
+ERROR 2022-10-27 13:59:22,725 basehttp 8908 14004 "GET / HTTP/1.1" 500 66496
+ERROR 2022-10-27 13:59:26,377 log 8908 14004 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 8, in home
+    json_data = open('/data.json')
+FileNotFoundError: [Errno 2] No such file or directory: '/data.json'
+ERROR 2022-10-27 13:59:26,381 basehttp 8908 14004 "GET / HTTP/1.1" 500 66496
+ERROR 2022-10-27 13:59:40,032 log 8908 14004 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 8, in home
+    json_data = open('data.json')
+FileNotFoundError: [Errno 2] No such file or directory: '/data.json'
+ERROR 2022-10-27 13:59:40,037 basehttp 8908 14004 "GET / HTTP/1.1" 500 66494
+ERROR 2022-10-27 14:04:40,426 log 6828 17028 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 22, in home
+    'data': countryData.data
+AttributeError: 'dict' object has no attribute 'data'
+ERROR 2022-10-27 14:04:40,429 basehttp 6828 17028 "GET / HTTP/1.1" 500 65934
+ERROR 2022-10-27 14:05:57,042 log 5620 8836 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 30, in home
+    logger.info(countryData.data)
+AttributeError: 'dict' object has no attribute 'data'
+ERROR 2022-10-27 14:05:57,045 basehttp 5620 8836 "GET / HTTP/1.1" 500 66832
+ERROR 2022-10-27 14:07:41,352 log 7260 15828 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 30, in home
+    logger.info(countryData.data)
+AttributeError: 'dict' object has no attribute 'data'
+ERROR 2022-10-27 14:07:41,356 basehttp 7260 15828 "GET / HTTP/1.1" 500 66832
+ERROR 2022-10-27 14:07:44,031 log 7260 15828 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 30, in home
+    logger.info(countryData.data)
+AttributeError: 'dict' object has no attribute 'data'
+ERROR 2022-10-27 14:07:44,034 basehttp 7260 15828 "GET / HTTP/1.1" 500 66832
+ERROR 2022-10-27 14:07:50,340 log 7260 15828 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 30, in home
+    logger.info(countryData)
+AttributeError: 'dict' object has no attribute 'data'
+ERROR 2022-10-27 14:07:50,343 basehttp 7260 15828 "GET / HTTP/1.1" 500 66822
