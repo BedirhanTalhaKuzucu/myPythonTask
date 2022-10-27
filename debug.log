@@ -400,3 +400,29 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'static'. Did you forget to register or load this tag?
 ERROR 2022-10-27 15:24:52,404 basehttp 9072 16908 "GET /sortISO HTTP/1.1" 500 138540
+ERROR 2022-10-27 15:56:21,105 log 16056 2520 Internal Server Error: /dataBase
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 62, in renderDatabase
+    return render(request, "myTasks/renderedDataBase.html", context)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myTasks/renderedData.html
+ERROR 2022-10-27 15:56:21,111 basehttp 16056 2520 "GET /dataBase HTTP/1.1" 500 81526
+ERROR 2022-10-27 16:27:04,489 log 6960 17288 Internal Server Error: /api
+Traceback (most recent call last):
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\btkkz\Desktop\projects\myPythonTask\myTasks\views.py", line 69, in fetchData
+    content = response.text.json()
+AttributeError: 'str' object has no attribute 'json'
+ERROR 2022-10-27 16:27:04,497 basehttp 6960 17288 "GET /api HTTP/1.1" 500 67156

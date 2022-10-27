@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>My Tasks</title>
+</head>
+
+<body>
+
+    <h2>Task 6</h2>
+    <h4>rendered Database</h4>
+    <table style="width:50%">
+        <tr>
+            <th> ID </th>
+            <th>Country Name </th>
+            <th>Iso Code</th>
+        </tr>
+        {% for item in countries %}
+        <tr>
+            <td> {{ item.idNummer}} </td>
+            <td> {{ item.name }} </td>
+            <td>{{ item.iscode }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>
